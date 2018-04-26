@@ -26,11 +26,47 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/gyroscope"/>
 
-        <ListView
-            android:id="@+id/wifi_list"
+        <TextView
+            android:id="@+id/wifi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:ignore="NestedScrolling" />
+            android:layout_below="@+id/gps"/>
+
+        <TextView
+            android:id="@+id/mic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wifi"/>
+
+        <TextView
+            android:id="@+id/network"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mic"/>
+
+        <Button
+            android:id="@+id/start"
+            android:text="@string/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/network"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/stop"
+            android:text="@string/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/export"
+            android:text="@string/export"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stop"
+            android:layout_centerHorizontal="true"/>
 
     </RelativeLayout>
 
